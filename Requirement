@@ -10,3 +10,7 @@ Pillow
 seaborn
 flask
 os
+TensorBoard
+Optuna
+Gunicorn (Green Unicorn) and Waitress
+werkzeug.utils
