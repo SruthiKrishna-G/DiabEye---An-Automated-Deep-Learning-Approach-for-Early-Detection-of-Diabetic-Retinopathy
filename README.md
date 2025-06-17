@@ -26,10 +26,10 @@ DiabEye/
 
 ──> Diabeye_Workflow.jpg      # Structured pipeline
 
-├── models/                   # Trained model files and training scripts
+──> models/                   # Trained model files and training scripts
 
-├── diabeye_main.py           # Main execution script
+──> diabeye_main.py           # Main execution script
 
-├── app/                      # Web application source code
+──> app/                      # Web application source code
 
-└── README.md                 # Project documentation
+──> README.md                 # Project documentation
