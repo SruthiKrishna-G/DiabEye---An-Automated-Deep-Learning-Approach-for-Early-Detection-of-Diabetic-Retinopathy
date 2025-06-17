@@ -16,3 +16,13 @@ You can download the full dataset from [Kaggle](https://www.kaggle.com/datasets/
 ![image](https://github.com/user-attachments/assets/c0777158-d63d-43df-81b8-cc6fe1217da5)
 
 Note: Only sample images are included in this repository due to dataset size constraints.
+
+
+DiabEye/
+├── Sample data/              # Sample dataset images and labels
+├── requirements.txt          # Python dependencies
+├── Diabeye_Workflow.jpg      # Structured pipeline
+├── models/                   # Trained model files and training scripts
+├── diabeye_main.py           # Main execution script
+├── app/                      # Web application source code
+└── README.md                 # Project documentation
