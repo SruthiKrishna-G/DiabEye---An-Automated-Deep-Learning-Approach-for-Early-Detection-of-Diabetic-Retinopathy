@@ -19,11 +19,12 @@ Note: Only sample images are included in this repository due to dataset size co
 
 
 DiabEye/
-├── Sample data/              # Sample dataset images and labels
 
-├── requirements.txt          # Python dependencies
+──> Sample data/              # Sample dataset images and labels
 
-├── Diabeye_Workflow.jpg      # Structured pipeline
+──> requirements.txt          # Python dependencies
+
+──> Diabeye_Workflow.jpg      # Structured pipeline
 
 ├── models/                   # Trained model files and training scripts
 
