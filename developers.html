@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Developers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">DiabEye - Automated Detection of Diabatic Retinopathy</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/developers">Developers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="developers-container">
+        <h1 class="developers-title">Project Developers</h1>
+
+        <div class="developer-card">
+            <img src="{{ url_for('static', filename='sruthi.png') }}" alt="Developer 1" class="developer-photo">
+            <div class="developer-info">
+                <h3>Sruthi Krishna Gajula</h3>
+                <p>Reg No: 21BCE8428</p>
+                <p>A software developer with experience in Python and Machine Learning, played a key role in the development of the detection algorithm.</p>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <img src="{{ url_for('static', filename='vyshnavi.png') }}" alt="Developer 2" class="developer-photo">
+            <div class="developer-info">
+                <h3>Vyshnavi Kolluri</h3>
+                <p>Reg No: 21BCE7430</p>
+                <p>A data Analyst with expertise in image processing , contributed to optimizing the model, enhancing its accuracy and efficiency for diabetic retinopathy detection.</p>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <img src="{{ url_for('static', filename='harshitha.png') }}" alt="Developer 3" class="developer-photo">
+            <div class="developer-info">
+                <h3>Harshitha Vidavalapati</h3>
+                <p>Reg No: 21BCE7156</p>
+                <p>A frontend developer specializing in HTML and CSS , contributed to designing responsive and visually appealing layouts, ensuring a clean and consistent user interface.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 DiabEye. All rights reserved.</p>
+    </footer>
+</body>
+</html>

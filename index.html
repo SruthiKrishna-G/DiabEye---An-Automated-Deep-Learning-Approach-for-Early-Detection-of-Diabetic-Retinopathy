@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">DiabEye - Automated Detection of Diabatic Retinopathy</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/developers">Developers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="title">RetinaVision</h1>
+
+        <form action="/" method="post" enctype="multipart/form-data" class="form">
+            <input type="file" name="file" required class="file-input">
+            <button type="submit" class="submit-button">Upload & Classify</button>
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {% if result %}
+            <h3 class="result-title">Result:</h3>
+            <p class="result-text">{{ result }}</p>
+            <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image" class="uploaded-image">
+        {% endif %}
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 DiabEye. All rights reserved.</p>
+    </footer>
+</body>
+</html>
